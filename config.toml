@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'http://0x5d.github.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Nerv'
 theme = 'PaperMod'
