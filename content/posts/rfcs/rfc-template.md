@@ -1,4 +1,11 @@
+This template is a companion for my [Writing RFCs](https://0x5d.github.io/posts/rfcs/) post. This is meant to be adapted to your specific needs. If something doesn't work for you, get rid of it or change it!
+
+You should also look at other RFC templates, such as [Hashicorp's](https://works.hashicorp.com/articles/rfc-template).
+
 # RFC: (Title here)
+
+Authors: (Your name goes here)
+Date:
 
 ## Abstract
 A brief, 1-paragraph description of the problem and the solution. This will help readers contextualize themselves before diving into the RFC. 
@@ -7,6 +14,7 @@ A brief, 1-paragraph description of the problem and the solution. This will help
 What additional context would be valuable for the reader? Write it here! It can be historical (e.g. our user-base has increased one order of magnitude in the past year) or technical.
 
 ### Motivation
+What's the main motivation to tackle this problem? What are the main benefits?
 
 ## Requirements
 These help set the limits on the solution space, making it easirer to motivate your proposal (next section). They can be functional and non-functional.
@@ -20,6 +28,12 @@ Architecture and flow diagrams, wireframes and prototypes work really well here,
 
 ### Detailed design
 This is where you go into the weeds, listing all the finer-grained changes that your solution requires. Don't be afraid to be precise and specific - the previous sections were about showing a bird's eye view of the puzzle, but this is where you show what the pieces are and how they fit together.
+
+### Costs
+Nothing is free! What is the cost of implementing your proposal?
+
+### Risks
+Go over any factors which could put your plan in danger, as well as any mitigation strategies.
 
 ## Alternatives
 

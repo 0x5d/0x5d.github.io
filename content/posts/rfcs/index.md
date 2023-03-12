@@ -10,7 +10,7 @@ ShowReadingTime: true
 
 Here I'll try to write the post I wish I'd read before I started writing RFCs at work. I'll start by providing some motivation for RFCs, then go over my _current_ process for writing them, as well as provide a [template].
 
-This isn't by any means a formal specification for writing RFCs. If anything, it's just a loose framework I've found useful over the past couple of years. I'm also writing this as a reference for myself in the future, but hoping it's useful for someone out there. It took me a while to appreciate the value of RFCs, but now I consider them one of the most useful tools I use regularly - so if you've never written an RFC, I hope when you're finished reading this post you'll feel confident enough to invest the time in one next time you get the chance. If you're an RFCs veteran, maybe this will give you a different perspective on them, and if you have tips, please do share them!
+This isn't by any means a formal specification for writing RFCs. If anything, it's just a loose framework I've found useful over the past couple of years. I'm also writing this as a reference for myself in the future, but hoping it's useful for someone out there. It took me a while to appreciate the value of RFCs, but now I consider them one of the helpful tools I use regularly - so if you've never written an RFC, I hope when you're finished reading this post you'll feel confident enough to invest the time in one next time you get the chance. If you're an RFCs veteran, maybe this will give you a different perspective on them, and if you have tips, please do share them!
 
 **Hold on - what's an RFC?**
 RFC stands for "Request for Comments". It's a structured document written in natural language explaining a proposal. Most of the time, RFCs are written for technical proposals, but it could just as well be used to propose a change in an organizational process, for example.
@@ -81,6 +81,8 @@ When it's time to get to work, here's a loose strategy I've used, based on the a
 Let me expand on 4. & 5. When sharing an early draft, you'll get a lot of feedback on the _form_, like a note you forgot to remove or requests to add visual material, expand on an idea, etc. If a lot of people review it simultaneously at that stage, you'll get a lot of similar comments. If readers perceive your RFC as a very "dirty" draft, they might not read it all (or at all). The idea is to refine these early on with a group of people that care a lot about the RFC, like your team or your manager. With those comments out of the way, you can expand the group of reviewers. The new round of comments should hopefully focus more on the content.
 
 With regards to getting an RFC approved, it depends on the implicit or explicit agreements or policies within your organization. Some teams require sign-offs (e.g. reviewers mark the document as approved), while others may interpret as approval the lack of outstanding feedback after a couple review rounds. It's all about communicating expectations effectively.
+
+## Closing remarks
 
 Lastly, I think it's worth mentioning that the most important part of the whole process is to keep an open mind. It's a **Request** for Comments. You're actively asking other people to review and critique your proposal. Some folks will like it a lot, while others might not. While the former might feel good, I've found that it's the latter that really help, assuming good faith and that no one's gatekeeping anything (if you suspect that's not the case, you might have a big culture problem on your hands!). 
 
