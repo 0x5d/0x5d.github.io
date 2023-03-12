@@ -19,7 +19,7 @@ RFC stands for "Request for Comments". It's a structured document written in nat
 
 I've found 3 main benefits of writing RFCs. They are each related with each general stage of the decision-making process: _before_, _during_ and _after_. In short, I value that they facilitate an **upfront analysis** of the change and its implications, they encourage **asynchronous collaboration** and thoughtful discussion, and serve as a **future reference** to understand how and why the decision was made.
 
-In a healthy organization, this all should also mean you'll end up spending less time than if you had just dove right into coding. It often seems counter-productive, but after investing time into writing a good RFC the path forward should hopefully be clearer and smoother in many ways.
+In a healthy organization, this all should also mean you'll end up spending less time overall than if you had just dove right into coding. It often seems counter-productive, but after investing time into writing a good RFC the path forward should hopefully be clearer and smoother in many ways.
 
 ### Before: Upfront analysis
 
@@ -84,8 +84,8 @@ With regards to getting an RFC approved, it depends on the implicit or explicit 
 
 ## Closing remarks
 
-Lastly, I think it's worth mentioning that the most important part of the whole process is to keep an open mind. It's a **Request** for Comments. You're actively asking other people to review and critique your proposal. Some folks will like it a lot, while others might not. While the former might feel good, I've found that it's the latter that really help, assuming good faith and that no one's gatekeeping anything (if you suspect that's not the case, you might have a big culture problem on your hands!). 
+Lastly, I think it's worth mentioning that the most important part of the whole process is to keep an open mind. It's a **Request** for Comments. You're actively asking other people to review and critique your proposal. Some folks will like it a lot, while others might not. Even if the latter scenario doesn't feel great, I've found that it's usually the most helpful, assuming good faith and that no one's gatekeeping anything (if you suspect that's not the case, you might have a big culture problem on your hands!). 
 
 If someone isn't convinced with your RFC, it might be that you haven't considered other alternatives. In some cases, someone will reveal a major flaw in your RFC, causing its overall rejection. This might feel disheartening, but it's actually a great outcome! That person just saved you from wasting time pursuing an endeavor that wouldn't have ended well. Go back to the drawing board, and if possible, try to get them involved so you can come up with an airtight solution.
 
-[template]: https://github.com/0x5d/0x5d.github.io/blob/main/content/posts/01-rfcs/rfc-template.md
+[template]: https://github.com/0x5d/0x5d.github.io/blob/main/content/posts/rfcs/rfc-template.md
