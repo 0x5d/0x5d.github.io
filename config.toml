@@ -1,4 +1,7 @@
-baseURL = 'http://0x5d.github.io/'
-languageCode = 'en-us'
-title = 'nerv'
-theme = 'PaperMod'
+baseURL = "http://0x5d.github.io/"
+languageCode = "en-us"
+title = "nerv"
+theme = "PaperMod"
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
