@@ -1,9 +1,3 @@
----
-title: "RFC Template"
-date: 2023-02-18T15:11:47-05:00
-ShowReadingTime: true
----
-
 # RFC: (Title here)
 
 ## Abstract

@@ -1,18 +1,19 @@
 ---
-title: "RFCs"
+title: "Writing RFCs"
 date: 2023-02-18T15:11:47-05:00
+lastmod: 2023-03-12T15:33:47-05:00
+publishDate: 2023-03-12T15:33:47-05:00
+keywords: ["design"]
+
 ShowReadingTime: true
 ---
 
-Here I'll try to write the post I wish I'd read before I started writing RFCs at work. I'll start by providing some motivation for RFCs, then go over my _current_ process for writing them, as well as a [template]().
+Here I'll try to write the post I wish I'd read before I started writing RFCs at work. I'll start by providing some motivation for RFCs, then go over my _current_ process for writing them, as well as provide a [template].
 
 This isn't by any means a formal specification for writing RFCs. If anything, it's just a loose framework I've found useful over the past couple of years. I'm also writing this as a reference for myself in the future, but hoping it's useful for someone out there. It took me a while to appreciate the value of RFCs, but now I consider them one of the most useful tools I use regularly - so if you've never written an RFC, I hope when you're finished reading this post you'll feel confident enough to invest the time in one next time you get the chance. If you're an RFCs veteran, maybe this will give you a different perspective on them, and if you have tips, please do share them!
 
-Hold on - what's an RFC?
+**Hold on - what's an RFC?**
 RFC stands for "Request for Comments". It's a structured document written in natural language explaining a proposal. Most of the time, RFCs are written for technical proposals, but it could just as well be used to propose a change in an organizational process, for example.
-
-Or in GPT-3's words:
-> RFCs are an invaluable tool for engineering organizations, as they provide a structure for engineers to communicate, collaborate and share ideas. RFCs provide a platform for engineers to document their designs and implementations, and provide a way for other engineers to review and provide feedback on a particular project. RFCs also provide a standardized way for engineers to communicate and share information, which helps to ensure that everyone is on the same page and working towards the same goal. RFCs also help to ensure that any changes to the project or design are documented and tracked, which can help to reduce the risk of errors or unintended consequences. Finally, RFCs provide a historical record that can be used to quickly look up and reference past decisions or implementations.
 
 ## Why?
 
@@ -72,7 +73,7 @@ I don't think there are mathematical, objective rules to know when or when not t
 When it's time to get to work, here's a loose strategy I've used, based on the above. 
 1. Assess the problem and solution spaces - is an RFC needed?
 2. Identify co-authors, collaborators, stakeholders, audience.
-3. Start writing! Take a look at the [template](rfc-template.md).
+3. Start writing! Take a look at the [template].
 4. Share it and get feedback.
 5. When all feedback has been addressed, make sure your proposal has been generally approved.
 6. Implement.
@@ -84,3 +85,5 @@ With regards to getting an RFC approved, it depends on the implicit or explicit 
 Lastly, I think it's worth mentioning that the most important part of the whole process is to keep an open mind. It's a **Request** for Comments. You're actively asking other people to review and critique your proposal. Some folks will like it a lot, while others might not. While the former might feel good, I've found that it's the latter that really help, assuming good faith and that no one's gatekeeping anything (if you suspect that's not the case, you might have a big culture problem on your hands!). 
 
 If someone isn't convinced with your RFC, it might be that you haven't considered other alternatives. In some cases, someone will reveal a major flaw in your RFC, causing its overall rejection. This might feel disheartening, but it's actually a great outcome! That person just saved you from wasting time pursuing an endeavor that wouldn't have ended well. Go back to the drawing board, and if possible, try to get them involved so you can come up with an airtight solution.
+
+[template]: https://github.com/0x5d/0x5d.github.io/blob/main/content/posts/01-rfcs/rfc-template.md
