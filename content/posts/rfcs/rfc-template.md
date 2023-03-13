@@ -29,6 +29,12 @@ Architecture and flow diagrams, wireframes and prototypes work really well here,
 ### Detailed design
 This is where you go into the weeds, listing all the finer-grained changes that your solution requires. Don't be afraid to be precise and specific - the previous sections were about showing a bird's eye view of the puzzle, but this is where you show what the pieces are and how they fit together.
 
+### Operations
+The purpose of this section is to answer questions like "how will it be deployed?", "how will the migration look like?". Consider scenarios in your new solution's licecycle, such as updates, failover, scenarios where manual intervention is needed, etc. 
+
+### Metrics
+List and describe all the metrics that will need to be monitored to check that the new feature, component, etc., is working well.
+
 ### Costs
 Nothing is free! What is the cost of implementing your proposal?
 
