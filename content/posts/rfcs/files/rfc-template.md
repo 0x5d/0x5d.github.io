@@ -1,4 +1,4 @@
-This template is a companion for my [Writing RFCs](https://0x5d.github.io/posts/rfcs/) post. This is meant to be adapted to your specific needs. If something doesn't work for you, get rid of it or change it!
+This template is a companion for my post ["On Writing RFCs"](https://0x5d.github.io/posts/rfcs/). This is meant to be adapted to your specific needs. If something doesn't work for you, get rid of it or change it!
 
 You should also look at other RFC templates, such as [Hashicorp's](https://works.hashicorp.com/articles/rfc-template).
 
@@ -27,7 +27,7 @@ This is a high level description of your proposal. After reading it, the reviewe
 Architecture and flow diagrams, wireframes and prototypes work really well here, as they help readers visualize the solution from different angles.
 
 ### Detailed design
-This is where you go into the weeds, listing all the finer-grained changes that your solution requires. Don't be afraid to be precise and specific - the previous sections were about showing a bird's eye view of the puzzle, but this is where you show what the pieces are and how they fit together.
+This is where you go dive into the details, listing all the finer-grained changes that your solution requires. Don't be afraid to be precise and specific - the previous sections were about showing a bird's eye view of the puzzle, but this is where you show what the pieces are and how they fit together.
 
 ### Operations
 The purpose of this section is to answer questions like "how will it be deployed?", "how will the migration look like?". Consider scenarios in your new solution's licecycle, such as updates, failover, scenarios where manual intervention is needed, etc. 
@@ -51,6 +51,6 @@ Normally, there should be 1 or 2 alternatives other than "do nothing". If you do
 
 List any external material you used, so reviewers can cross-check.
 
-## Apendices
+## Appendices
 
 Any supplementary information or explanations may go here. This is usually info that might be useful for a small subset of your audience, something to add "just in case".

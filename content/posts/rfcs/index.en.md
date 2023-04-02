@@ -1,9 +1,9 @@
 ---
-title: "Writing RFCs"
+title: "On writing RFCs"
 date: 2023-02-18T15:11:47-05:00
 lastmod: 2023-03-12T15:33:47-05:00
 publishDate: 2023-03-12T15:33:47-05:00
-keywords: ["design"]
+tags: ["design"]
 
 ShowReadingTime: true
 ---
@@ -31,11 +31,11 @@ At this point, it's essential to identify co-authors, collaborators, stakeholder
 - Co-authors will actively work on writing the RFC with you, committing time to think about it or parts of it.
 - Collaborators are people who can guide you or help you bounce ideas off. For example, a team member who owns a subsystem your code will need to interact with, or a product team member who can help you understand the underlying use cases better.
 - Stakeholders are any folks impacted by the RFC's implementation. It's a naturally "open" group that might include contributors who must prioritize new work, their managers, customers waiting for a specific feature, etc.
-- Your audience is whoever you intend to get feedback from. You must identify it early as it will determine the style of writing you should use and the type of additional material you should include (such as diagrams, code snippets, or wireframes). If you fail to establish your audience, receiving high-quality feedback on your RFC will become more challenging. Commenters will usually ask you to explain something better or add more context. 
+- Your audience is whoever you intend to get feedback from. You must identify it early as it will determine the style of writing you should use and the type of additional material you should include (such as diagrams, code snippets, or wireframes). If you fail to establish your audience, receiving high-quality feedback on your RFC will become more challenging. A clear sign of this is that commenters will usually ask you to explain something better or add more context. In those cases, your reaction shouldn't be to exclude them from the review process - instead, try to understand their background and adapt your RFC to make it more digestible.
 
-I've found the things I described in this section to help reduce the risk (both in quantity and type) associated with your proposal.
+I've found the things I described in this section to help reduce the risk (both in magnitude and type) associated with your proposal.
 
-The first risk dimension is resource utilization. If your RFC is approved, you'll better understand what needs to be done, who should do it, and how long it will take. On the other hand, if it's rejected, you won't have wasted your valuable time working on a potentially-complex project only to find out it wasn't needed. Arguably, our work as programmers isn't to write as much code as possible but to minimize the amount of code that needs to be written. 
+The first risk dimension is resource utilization. If your RFC is approved, you'll better understand **what** needs to be done, **who** should do it, and **how long** it will take. On the other hand, if it's rejected, you won't have wasted your valuable time working on a potentially-complex project only to find out it wasn't needed. Arguably, our work as programmers isn't to write as much code as possible but to minimize the amount of code that needs to be written. 
 
 The second is change management. Your proposal will inevitably affect the system it modifies. Thinking about the problem and solution in such a profound way will help you see how implementing your RFC will impact other components and users, making coming up with a migration strategy an easier task.
 
@@ -58,15 +58,15 @@ After the RFC has been implemented, it's still an invaluable resource, as people
 
 In such a dynamic (to put it lightly) industry, people **will** switch teams, and they **will** leave companies. And so will you, probably! Coming into a new team and having a set of well-written RFCs for the most relevant parts is a godsend.
 
-Another minor - but still significant - side-effect of this is making it easier for folks who joined the team recently to empathize with employees with a longer tenure. It can be easy to judge someone harshly when you see a part of the codebase they contributed that doesn't make sense. "bad" code often can't be taken at face value, and RFCs help with that. If the requirements were documented, they could say a lot about the context in which it was written and the constraints that limited the implementation. 
+Another minor - but still significant - side-effect of this is making it easier for folks who joined the team recently to empathize with employees with a longer tenure. It can be easy to judge someone harshly when you see a part of the codebase they contributed that doesn't make sense. "Bad" code often can't be taken at face value, and RFCs help with that. If the requirements were documented, they could say a lot about the context in which it was written and the constraints that limited the implementation. 
 
 ## When?
 
 In time, you'll instinctively know when to invest time into writing RFCs. However, a good rule of thumb is to review each of the above reasons for writing one (upfront analysis, collaboration, future reference) and consider whether any will be valuable to you (or future you!). If at least one of them seems like a good thing to have, chances are it'll be time well spent. It's easy to dismiss writing RFCs if your team is small and everyone is on the same page about what needs to be done. However, you'll be surprised at how often your assumptions about how something works - or how it can be changed - turn out to be wrong. When that happens, it's usually way better if you're just writing a document instead of at the last commit of a colossal pull request.
 
-Similarly, teams grow and change, and people forget. If your company is small now, it doesn't mean it will remain so forever. If it starts growing, you might need to hire people at an increasing rate, and RFCs will help them hit the ground running when they join. Also, when someone new asks you, "what were you thinking when you added this feature?!", you can point them to the RFC and not worry about having to keep every detail in your mind.
+Similarly, teams grow and change, and we forget things. If your company is small now, it doesn't mean it will remain so forever. If it starts growing, you might need to hire people at an increasing rate, and RFCs will help them hit the ground running when they join. Also, when someone new asks you, "what were you thinking when you added this feature?!", you can point them to the RFC and not worry about having to keep every detail in your mind.
 
-Something to remember, though, is that not every problem needs an RFC. Some problems are small and self-contained, and their solution obvious or not controversial. In those cases, clear commit messages and a comprehensive cover letter for your pull request will go a long way in documenting the change. When someone wants to learn more about a particular file, they can use `git blame` and read them.
+Something to remember, though, is that not every change needs an RFC. Some problems are small and self-contained, and their solution obvious or not controversial. In those cases, clear commit messages and a comprehensive cover letter for your pull request will go a long way in documenting the change. When someone wants to learn more about a particular file, they can use `git blame` and read them.
 
 There are no mathematical, completely objective rules to know when or not to invest your time in an RFC. If in doubt, talk to your team and understand their expectations.
 
@@ -90,4 +90,4 @@ Lastly, keeping an open mind is an essential part of the process. It's a **Reque
 
 If someone isn't convinced with your RFC, it could be that you haven't considered all the alternatives. Sometimes, someone will reveal a major flaw in your RFC, causing its rejection. This might feel disheartening, but it's actually a great outcome! That person saved you from wasting time pursuing an endeavor that wouldn't have ended well. Go back to the drawing board, and try to get them involved so you can come up with an airtight solution.
 
-[template]: https://github.com/0x5d/0x5d.github.io/blob/main/content/posts/rfcs/rfc-template.md
+[template]: https://github.com/0x5d/0x5d.github.io/blob/main/content/posts/rfcs/files/rfc-template.md

@@ -1,0 +1,43 @@
+baseURL: "http://0x5d.github.io/"
+languageCode: "en-us"
+title: "nerv"
+theme: "PaperMod"
+outputs:
+  home: ["HTML", "RSS", "JSON"]
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+    menu:
+      main:
+        - name: archive
+          url: archive/
+          weight: 5
+        - name: search
+          url: search/
+          weight: 10
+        - name: tags
+          url: tags/
+          weight: 10
+          
+  es:
+    languageName: Español
+    languageAltTitle: Español
+    weight: 2
+    taxonomies:
+      category: categorías
+      tag: etiquetas
+    menu:
+      main:
+        - name: archivo
+          url: archivo/
+          weight: 5
+        - name: búsqueda
+          url: busqueda/
+          weight: 10
+        - name: etiquetas
+          url: etiquetas
+          weight: 10
