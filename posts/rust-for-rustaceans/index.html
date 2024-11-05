@@ -202,7 +202,11 @@ The Book:</p>
 <p><img loading=lazy src=assets/c-linear.png alt="Linear visualization of the C-compatible memory layout">
 </p>
 <p>By visualizing it as a grid, it becomes clearer that the padding is determined by the field with the type that takes up the most space, <code>long</code>.</p>
+<p><img loading=lazy src=assets/c-linear.png alt="Grid visualization of the C-compatible memory layout" title="{width='350'}">
+</p>
 <p>And this would be Rust&rsquo;s default layout (i.e. specifying <code>#[repr(Rust)]</code>, or no <code>repr</code> attribute at all), which is 8B-aligned like the C-compatible layout, but which requires no padding between fields, reducing the total size to 16B.</p>
+<p><img loading=lazy src=assets/c-linear.png alt="Grid visualization of Rust&amp;rsquo;s default memory layout" title="{width='350'}">
+</p>
 <h4 id=bonus-track-alignment-modifiers>Bonus Track: Alignment Modifiers<a hidden class=anchor aria-hidden=true href=#bonus-track-alignment-modifiers>#</a></h4>
 <p>The book doesn&rsquo;t mention the <a href=https://doc.rust-lang.org/reference/type-layout.html#the-alignment-modifiers>alignment modifiers</a> <code>align</code> and <code>packed</code>, which can be used to &ldquo;respectively raise or lower the alignment of structs and unions&rdquo;.</p>
 <p>While reading about them, I again felt that their effects would be easier to understand and explain with a visual model.</p>
@@ -229,6 +233,8 @@ The Book:</p>
 </code></pre></div><p>The layout for <code>repr(Rust, packed(2))</code> is still the same as the one before, since 16B is 2B-aligned there was no padding.</p>
 <p><strong><code>align</code></strong></p>
 <p>As mentioned above, <code>align</code> raises the alignment. If we add <code>#[repr(align(32))]</code> (default representation, 32B-aligned) to <code>Foo</code>, this is what we get:</p>
+<p><img loading=lazy src=assets/c-linear.png alt="Grid visualization of Rust&amp;rsquo;s default memory layout, with align(32)" title="{height='150'}">
+</p>
 <p>Again, this can be checked with</p>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rust data-lang=rust><span style=color:#66d9ef>use</span> std::mem;
 
