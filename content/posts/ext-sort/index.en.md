@@ -24,7 +24,7 @@ This is the 1st post in a series, where I cover the code that generates the data
 So the basic idea is:
 - you get a big file (bigger than memory), 
 - you split it into smaller chunks that fit in memory,
-- you sort those chunks and write them to disk
+- you sort those chunks and write them to disk,
 - you merge the sorted chunks and write the output, sorted.
 
 I will go deeper into details as we go into my implementation.
@@ -33,9 +33,9 @@ I will go deeper into details as we go into my implementation.
 
 **Goals**
 
-- This thing needs to be **fast** af.
+- Make this thing **fast** af.
 - Drink good espresso.
-- Go into rabbit holes.
+- Go into rabbit holes, learn about hardware, the OS, and performance.
 
 **Non-goals**
 
@@ -237,11 +237,12 @@ time ./target/release/ext-sort gen --file data.txt --size 107374182400
 ./target/release/ext-sort gen --file data.txt --size 107374182400  176.07s user 21.10s system 924% cpu 21.323 total
 ```
 
-That's 4 seconds more than fio, which is a little bit of overhead. If you see any chances for removing overhead, please let me know over at [Twitter](https://x.com/_0x5d) or [Bluesky](https://bsky.app/profile/0x5d.bsky.social)!
+That's just over 3 seconds more than fio, which is a little bit of overhead. If you see any chances for reducing it, please let me know over at [Twitter](https://x.com/_0x5d) or [Bluesky](https://bsky.app/profile/0x5d.bsky.social)!
 
 ## The real friends were the walls we crashed into along the way
 
 > Soundtrack: [Turnstile - Endless](https://youtu.be/ccLAgkz2eGI?si=iGSnoGf1BH429mi8)
+>
 > _When I hit a wall I gotta BREAK. IN._
 
 Here are some things I ran into.
