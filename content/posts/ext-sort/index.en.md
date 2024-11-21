@@ -49,6 +49,8 @@ Hold on, to sort lots of random data we need to start by -
 
 > Soundtrack: [Turnstile - Generator](https://www.youtube.com/watch?v=MDRUwlqa6N0)
 
+{{< spotify type="track" id="04vAjpZ2ppNIFcxq9bqj39" width="100%" height="250" >}}
+
 Ok, so the first thing we need is a way to generate random data. For this project, we'll consider a 4KiB (AKA a "page") ASCII string a _unit_ or _block_ of data. This will be the resolution we'll be working at. The source file will be composed of many 4KiB strings with no gaps or delimiters.
 
 ### Writing\* lots of random data fast\*
@@ -240,6 +242,8 @@ time ./target/release/ext-sort gen --file data.txt --size 107374182400
 That's just over 3 seconds more than fio, which is a little bit of overhead. If you see any chances for reducing it, please let me know over at [Twitter](https://x.com/_0x5d) or [Bluesky](https://bsky.app/profile/0x5d.bsky.social)!
 
 ## The real friends were the walls we crashed into along the way
+
+{{< spotify type="track" id="6yzMX2L7bjFbklJPfBIO3o" width="100%" height="250" >}}
 
 > Soundtrack: [Turnstile - Endless](https://youtu.be/ccLAgkz2eGI?si=iGSnoGf1BH429mi8)
 >
