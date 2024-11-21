@@ -179,7 +179,7 @@ Next up, the values used throughout the function at are initialized:
 About that...
 
 ```rust
-let writer_handle = tokio::spawn(writer(file, b.clone(), rx, num_cores));
+let writer_handle = tokio::spawn(writer(file, b.clone(), rx));
 // ...
 async fn writer(
     mut file: File,
@@ -241,6 +241,18 @@ time ./target/release/ext-sort gen --file data.txt --size 107374182400
 
 That's just over 3 seconds more than fio, which is a little bit of overhead. If you see any chances for reducing it, please let me know over at [Twitter](https://x.com/_0x5d) or [Bluesky](https://bsky.app/profile/0x5d.bsky.social)!
 
+On the memory side, I set the [default value for `max_mem`](https://github.com/0x5d/ext-sort/blob/266f2f87042c962c700a04efe6c3a4a37ee27af8/src/cli/gen.rs#L12-L13) to be 2GiB. Let's see if this holds.
+
+I used `htop` to get a snapshot of the CPU and memory before and during (I should just do this all on Linux already, with `free` and `heaptrack`).
+
+![Resource usage, before](assets/before.png)
+
+5.67GiB - only Terminal (and 1000 other MacOS processes) running.
+
+![Resource usage, during](assets/during.png)
+
+7.40GiB! A little bit under 2GiB over the baseline on average. And look at all those busy CPU cores. Looks like it's working as intended - although the write speed looks like it could be better. I'll try to figure it out later.
+
 ## The real friends were the walls we crashed into along the way
 
 {{< spotify type="track" id="6yzMX2L7bjFbklJPfBIO3o" width="100%" height="250" >}}
@@ -249,7 +261,7 @@ That's just over 3 seconds more than fio, which is a little bit of overhead. If 
 >
 > _When I hit a wall I gotta BREAK. IN._
 
-Here are some things I ran into.
+Before we say goodbye, here are some things I ran into, which could be useful for you too.
 
 ### Always use `--profile release`
 
@@ -274,3 +286,11 @@ The `write` docstring says it clearly:
 > This function will attempt to write the entire contents of `buf`, but the entire write might not succeed [...]
 
 So if you wanna make sure the whole buffer is written to the file, call `write_all` (or do what `write_all` does, which is to call `write` as many times as needed).
+
+# Goodbye for now
+
+This was the 1st in a series of posts. Next up, I'll cover the actual sorting. The rest of the algorithm is already "finished" in the repo, but there's things I still wanna experiment with before I write a post about it.
+
+I'm also thinking about doing some variations on all this, such as a Linux version using [Glommio](https://github.com/DataDog/glommio). We'll see!
+
+Please let me know if I missed anything that could make the code better in any way, and I'll buy you some coffee if we ever meet.
