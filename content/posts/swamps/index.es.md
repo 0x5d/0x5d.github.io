@@ -1,11 +1,12 @@
 ---
-title: "Ciénagas"
+title: "Pantanos"
 date: 2025-01-12T15:11:47-05:00
 lastmod: 2025-01-12T15:11:47-05:00
 publishDate: 2025-01-12T15:11:47-05:00
 etiquetas: ["carrera", "management", "liderazgo"]
 
 ShowReadingTime: true
+ShowToc: true
 ---
 
 Desde hace un par de años, a medida que he tenido la oportunidad de liderar equipos en proyectos y situaciones más complejas e inciertas, me ha picado la curiosidad por entender más sobre management de ingeniería y liderazgo técnico. Por eso he leído 3 libros hasta el momento: [The Manager's Path](https://www.oreilly.com/library/view/the-managers-path/9781491973882/), de Camille Fournier, y [An Elegant Puzzle](https://press.stripe.com/an-elegant-puzzle) y [Staff Engineer](https://staffeng.com/book) de Will Larson.
@@ -20,17 +21,20 @@ Las únicas fuentes que he visto que se enfocan en los intereses individuales de
 
 Son también las únicas fuentes entre las que he visto cuyas autoras no eran managers al momento de escribirlas.[^1]
 
-No hablo de situaciones "sencillas" de manejar, tales como malentendidos particulares, coyunturas temporales (como la renuncia de tu manager), o problemas obvios (como que un colega te haga bullying) sino de patrones sistemáticos que, a menos que se identifiquen rápido, te pueden poner en una posición desventajosa de la cual es muy difícil salir. Es esta dificultad para navegarlos y encontrar una salida la razón por la que me refiero a estos estados como "ciénagas".
+No hablo de situaciones "sencillas" de manejar, tales como malentendidos particulares, coyunturas temporales (como la renuncia de tu manager), o problemas obvios (como que un colega te haga bullying) sino de patrones sistemáticos que, a menos que se identifiquen rápido, te pueden poner en una posición desventajosa de la cual es muy difícil salir. Es esta dificultad para navegarlos y encontrar una salida la razón por la que me refiero a estos estados como "pantanos".
 
-Estos son patrones que he identificado a lo largo de mi carrera que han hecho que yo, u otras personas de otros equipos, entren en una ciénaga.
+Estos son patrones que he identificado a lo largo de mi carrera que han hecho que yo, u otras personas de otros equipos, entren en un pantano. Algunos los he vivido, y otros los he observado desde una distancia segura.
 
 Antes de pasar a hablar de ellos, quiero aclarar que la mayoría de las soluciones que propongo son de caracter individualista. Es decir, son algunas cosas que puedes hacer **tú** si te encuentras en una situación parecida. Claramente, una solución a nivel organizacional sería ideal, pero una organización puede tomar años en cambiar, por lo que hay que pensar bien si ese es el camino que se quiere tomar.
 
 También quiero aclarar que en general, estas situaciones no suceden como parte de una estratagema compleja planeada por años para dañar tu carrera. A veces solo se trata de una cuestión de incentivos y cómo una organización o un equipo responden a ellos. A veces son causadas por la inexperiencia de un líder, y tú solo eres daño colateral. La razón por la que quiero hablar de estos patrones es para ayudarte a identificarlos antes de que tu carrera se vea afectada por ellos.
 
+![Pantano de Head Lopper](https://static1.cbrimages.com/wordpress/wp-content/uploads/robot6/2013/10/HL1-preview-4.png?q=50&fit=crop&w=750&dpr=1.5)
+> Andrew MacLean, Head Lopper #1
+
 ## Distribución desequilibrada de equipos
 
-Este escenario se puede dar en equipos distribuídos en distintos continentes.
+En este patrón hay al menos 2 grupos de personas en un mismo equipo que comparten responsabilidades operativas con una diferencia horaria importante (al menos ~6 hrs). Si uno de los grupos tiene menos miembros, la carga operativa en ese grupo va a ser mayor por persona, afectando negativamente su productividad y sus oportunidades de progresar en la empresa.
 
 Digamos que hay un equipo con 8 personas en América, y 4 personas en Europa, encargados de desarrollar y soportar una aplicación web. A cada persona le corresponde una semana de on-call (_guardia_) primario, y una de secundario inmediatamente luego. Los turnos de on-call duran 12 horas, y el turno de on-call de las personas en Europa inicia cuando termina el de las de América. A simple vista, éste parece ser un acuerdo justo, no?
 
@@ -40,7 +44,7 @@ Por otro lado, el equipo en Europa pasaría 2 semanas on-call y 2 semanas trabaj
 
 Para un manager, esto se ve como una mejora del 25% en productividad en el equipo de América. Por lo tanto, es probable que las personas en ese equipo avancen hacia ascensos y puestos de liderazgo mucho más rápido. A su vez, dado que son más productivos, los managers empezarán a entregarle más responsabilidades a estos líderes, quienes seguro querrán que sus equipos crezcan, posiblemente exacerbando el problema si contratan más personas en su zona horaria.
 
-Por su lado, las personas en Europa entrarán en una ciénaga. Dada su menor productividad, los managers le asignarán a sus miembros proyectos de menor impacto y alcance, lo cuál hará más difícil justificar un ascenso o aumento. La moral del equipo tenderá a disminuir también, afectando aún más la productividad.
+Por su lado, las personas en Europa entrarán en un pantano. Dada su menor productividad, los managers le asignarán a sus miembros proyectos de menor impacto y alcance, lo cuál hará más difícil justificar un ascenso o aumento. La moral del equipo tenderá a disminuir también, afectando aún más la productividad.
 
 La situación puede empeorar con otros factores, tales como
 - Concentración de trabajo reactivo en una zona horaria: En el ejemplo de arriba, se asume que ambos equipos tienen la misma carga mientras están on-call. Sin embargo, podría pasar que la mayoría de usuarios estén en Europa, de modo que que los turnos de soporte de América (que suceden durante tarde/ noche en Europa) sean tranquilos y permitan que aún durante sus turnos de on-call, el equipo pueda seguir trabajando en funcionalidades e iniciativas nuevas.
@@ -51,18 +55,22 @@ La situación puede empeorar con otros factores, tales como
 - Crecimiento desproporcionado en un continente diferente al tuyo; o, si vas a entrar a la empresa, presencia desproporcionada (en términos de número de empleados), en otro continente.
 
 ### Solución
-Resolver una distribución desequilibrada de equipos requiere del apoyo de managers y directores, y probablemente de VPs (dependiendo del tamaño de la empresa). En caso de que ya haya un desequilibrio, se debe limitar la contratación al continente con el equipo más pequeño. Si no, se debe tratar de mantener un factor de miembros en cada continente de 1:1 a medida que se contratan más personas. Conseguir el apoyo de líderes puede ser difícil si éstos se encuentran en el mismo continente del grupo con más integrantes, pues es probable que allí esté su red profesional. Si encuentras demasiada fricción, puede que simplemente el equipo más pequeño no sea una prioridad para la estrategia de la empresa, o que se vea como un equipo 100% de soporte. Si crees que ese puede ser el caso, considera la opción de buscar trabajo en otro lugar, o pedir una reubicación.
+Primero hay que entender la fuente del desequilibrio. Puede que el equipo de liderazgo no tenga mucha experiencia, pero también puede que se trate de una situación transitoria; si por ejemplo la empresa se está expandiendo a otros continentes, se esperaría que el equipo más pequeño siga creciendo, eventualmente zanjando la brecha.
 
-También vale la pena entender la fuente del desequilibrio. Puede que el equipo de liderazgo no tenga mucha experiencia, pero también puede que se trate de una situación transitoria; si por ejemplo la empresa se está expandiendo a otros continentes, se esperaría que el equipo más pequeño siga creciendo, eventualmente zanjando la brecha.
+Resolver una distribución desequilibrada de equipos requiere del apoyo de managers y directores, y probablemente de VPs (dependiendo del tamaño de la empresa). En caso de que ya haya un desequilibrio, se debe limitar la contratación al continente con el equipo más pequeño. Si no, se debe tratar de mantener un factor de miembros en cada continente de 1:1 a medida que se contratan más personas. Conseguir el apoyo de líderes puede ser difícil si éstos se encuentran en el mismo continente del grupo con más integrantes, pues es probable que allí esté su red profesional. Para ganar ese apoyo, es necesario mostrarle a tu manager datos claros sobre cómo la distribución del equipo está afectando tu productividad, pero también las iniciativas que vas a trabajar cuando se solucione - es de bastante ayuda mostrar que ya tienes planeado invertir bien el tiempo que recuperarás.
+
+Si encuentras demasiada fricción, puede que simplemente tu equipo no sea una prioridad para la estrategia de la empresa, o que se vea como un equipo 100% de soporte. Si crees que ese puede ser el caso, corrobóralo y considera la opción de buscar trabajo en otro lugar, o pedir una reubicación.
 
 ## El equipo de limpieza
+
+El equipo de limpieza surge cuando la organización recompensa mucho más el lanzamiento de nuevos proyectos o funcionalidades que su estabilidad. Esto lleva a que las personas que hayan entregado _algo_ rápido sin terminarlo del todo se asignen a nuevas iniciativas, las cuales entregan rápido, repitiendo el ciclo, mientras que otro grupo de personas - el equipo de limpieza - es asignado a mantener o terminar el trabajo que estos primeros dejan. Dados los incentivos de la organización (más cosas nuevas es mejor), el primer grupo será recompensado mientras que el segundo tendrá peores evaluaciones y cada vez menos acceso a nuevas oportunidades. 
 
 En mi experiencia, en una organización saludable cada líder se enfoca en un proyecto o área de los cuales son responsables, y siguen trabajando por meses o incluso años en mejorarlos. Este enfoque prolongado en un área hace posible que nos hagamos cargo personalmente de las consecuencias de nuestras decisiones. Además, dado que un líder está ocupado con un área específica, se crean oportunidades para que otras personas desarrollen nuevas iniciativas por fuera de ella y crezcan también.
 
 {{< twitter user="charliermarsh" id="1878081371907694967" >}}
 > _Este tweet de Charlie Marsh encapsula bien lo que quiero decir, cambiando "company" por "area"._
 
-Sin embargo, he visto como algunos managers desarrollan una predilección por ciertas personas talentosas, a quienes mueven impacientemente de un proyecto a otro, a veces sin que éstos estén completos. Las consecuencias de ésto son en general positivas para dichas personas, dado que en cierto modo están acumulando logros que luego pueden llevar a aumentos o ascensos. Sin embargo, a su paso van dejando sistemas incompletos de los que otras personas deben hacerse cargo. Este último grupo de personas se convierte en un "equipo de limpieza",encargado de estabilizar y mantener los proyectos que quedan empezados, a tal punto que esta se vuelve su responsabilidad. En este caso, la ciénaga se crea por la cantidad de trabajo que supone hacerse cargo de dichos proyectos, al punto que el equipo de limpieza se queda sin capacidad para trabajar en iniciativas propias.
+Sin embargo, he visto como algunos managers desarrollan una predilección por ciertas personas talentosas, a quienes mueven impacientemente de un proyecto a otro, a veces sin que éstos estén completos. Las consecuencias de ésto son en general positivas para dichas personas, dado que en cierto modo están acumulando logros que luego pueden llevar a aumentos o ascensos. Sin embargo, a su paso van dejando sistemas incompletos de los que otras personas deben hacerse cargo. Este último grupo de personas se convierte en un "equipo de limpieza",encargado de estabilizar y mantener los proyectos que quedan empezados, a tal punto que esta se vuelve su responsabilidad. En este caso, el pantano se crea por la cantidad de trabajo que supone hacerse cargo de dichos proyectos, al punto que el equipo de limpieza se queda sin capacidad para trabajar en iniciativas propias.
 
 El equipo de limpieza enfrenta entonces un dilema incómodo: si eligen no mantener o terminar estos proyectos, pueden ir dañando la relación con su manager poco a poco; pero si aceptan, sacrifican sus propias iniciativas por trabajar en las de otros, y puede que les toque responder por las malas decisiones pasadas de otra persona. Aceptar puede también llevar a otros problemas, como convertirse en **el camino de menor resistencia** (descrito más adelante).
 
@@ -82,13 +90,17 @@ Como en todos los casos, el primer paso debe ser hablarlo con tu manager. Muést
 
 Si no lo hace, la desobediencia puede funcionar. Por ejemplo, si hay un proyecto en el que quieres trabajar, pero no puedes porque tu _backlog_ está lleno, o tu manager se rehúsa a que cambies tus prioridades, puedes elegir trabajar en él independientemente. Es una estrategia arriesgada, ya que igual debes entregar el resto del trabajo, por lo que probablemente tendrás que trabajar en el proyecto en tu tiempo libre. Además, no tienes ningún tipo de garantía de que recibirás algún tipo de recompensa a su término. Habiendo dicho eso, he visto que esta estrategia ha funcionado bastante bien. Si no descuidas tu trabajo actual y tu proyecto es de alto impacto, tu empresa y tu manager no podrán simplemente ignorarlo.
 
+Por último, la mejor solución es la prevención. Establecer límites claros para tu trabajo puede ser difícil (sobre todo si eres nuevo en un equipo y quieres agradarle a la mayoría de personas), pero te puede ayudar mucho en el largo plazo.
+
 ## El camino de menor resistencia
+
+El sentido del deber de algunos ingenieros, o la falta de asertividad en su comunicación, los puede llevar a siempre aceptar peticiones para trabajar en tareas que el resto del equipo desdeña, pero que son de vital importancia, como entrevistas, actualizaciones de componentes, la solución de problemas en sistemas críticos, entre otras. Si la organización no recompensa este trabajo o no sabe evaluarlo, esto puede crear un ciclo donde la mayoría del tiempo de un ingeniero sea ocupado por tareas que no le ayuden a mejorar su posición, a pesar de que sus esfuerzos multiplican la productividad del resto del equipo.
 
 En mi opinión, los mejores ingenieros son quienes no se preocupan por qué tan glamuroso es el trabajo. Si hay algo que debe hacerse, se debe hacer y punto. No importa si se trata de arreglar el sistema de entrega continua para desbloquear un despliegue, o de implementar una nueva arquitectura. Son personas en las que el equipo y la organización pueden confiar.
 
 Por esto mismo, se pueden convertir en el camino de menor resistencia para su manager o su equipo. Por su altruismo son propensos a aceptar realizar el trabajo que nadie quiere hacer, solo por su fuerte sentido de deber. En una organización saludable, este tipo de trabajo es recompensado (siempre y cuando su impacto sea real), y en muchas organizaciones incluso se espera que sean los ingenieros en un nivel senior o superior quienes se encarguen de él directamente, o al menos de coordinarlo. Will Larson describe esto en más detalle en _Staff Engineer_.
 
-El problema aparece cuando el sistema de evaluación del rendimiento no está diseñado para tomar en cuenta este trabajo "de soldadura" (_glue work_[^2]) por Tanya Reilly. La metáfora viene de que - tal como la soldadura o el pegamento - este trabajo no es inmediatamente visible a pesar de que juega un papel crítico en mantener la estructura y los procesos de la empresa o equipo. Cualquier organización siempre tendrá montones de "piezas por soldar": migraciones, actualizaciones, entrevistas, revisiones de código, documentos de diseño, reuniones de planeación, etc. Si una organización valora un conjunto de actividades totalmente diferentes, y tú estás haciendo el trabajo de soldadura que todos evitan, puedes arriesgarte a terminar en una ciénaga.
+El problema aparece cuando el sistema de evaluación del rendimiento no está diseñado para tomar en cuenta este trabajo "de soldadura" (_glue work_[^2]) por Tanya Reilly. La metáfora viene de que - tal como la soldadura o el pegamento - este trabajo no es inmediatamente visible a pesar de que juega un papel crítico en mantener la estructura y los procesos de la empresa o equipo. Cualquier organización siempre tendrá montones de "piezas por soldar": migraciones, actualizaciones, entrevistas, revisiones de código, documentos de diseño, reuniones de planeación, etc. Si una organización valora un conjunto de actividades totalmente diferentes, y tú estás haciendo el trabajo de soldadura que todos evitan, puedes arriesgarte a terminar en un pantano.
 
 Poco a poco las personas asociarán cierto tipo de tareas contigo, y te las delegarán directa o indirectamente. Esto no lo harán necesariamente con malas intenciones - simplemente tú eres el camino de menor resistencia, lo cual ha creado sesgos en su forma de pensar.
 
@@ -99,17 +111,20 @@ Poco a poco las personas asociarán cierto tipo de tareas contigo, y te las dele
 
 ### Solución
 Lo primero que debes probar es decir "no". Puede que te hayas vuelto un experto en soldar, y que una tarea que a ti te llevaría 5 minutos a otro le tome 1 hora, pero es necesario que empieces a rechazar peticiones para hacer más.
-Dependiendo de qué tan "pantanosa" sea la ciénaga en la que te encuentres, puede ser más difícil, pues entre más grande sea el sesgo en las personas que te rodean, tendrás que responder "no" más veces. Esto puede ser desgastante, pero hay que restablecer las expectativas que tiene tu equipo de ti.
+
+Dependiendo de qué tan "espeso" sea el pantano en el que te encuentres, puede ser más difícil, pues entre más grande sea el sesgo en las personas que te rodean, tendrás que responder "no" más veces. Esto puede ser desgastante, pero hay que restablecer las expectativas que tiene tu equipo de ti. Además, negarte a trabajar en tareas en las cuales te han encasillado crea oportunidades para redistribuir ese conocimiento y experiencia. A tu manager seguro le gustará reducir el [bus factor](https://es.wikipedia.org/wiki/Bus_factor) del equipo.
 
 Documenta todo lo que sepas sobre las tareas que quieres redistribuir en tu equipo, y anúncialo en un canal público (email o Slack). Ten en cuenta que el cambio no será inmediato; si te hacen preguntas sobre temas ya documentados, recuérdales dónde pueden encontrar la respuesta. Si lo que quieren saber no está todavía en la documentación, ¡pídeles que contribuyan! Por otro lado, dale visibilidad a un proyecto de largo alcance en el que estés trabajando, y utilízalo como razón para rechazar el trabajo adicional. Un "no" a veces es difícil de procesar para otras personas cuando estas tienen una concepción afianzada sobre ti, mientras que un "no puedo porque estoy ocupado" es más fácil de digerir.
 
 Contar con el apoyo de tu manager, de modo que él o ella ayude a interceptar peticiones dirigidas hacia ti y redistribuirlas de manera más equilibrada entre otros miembros del equipo, es un impulso significativo. Por último, asegúrate de que el trabajo nuevo que estarás haciendo en lugar de "soldar" sea considerado valioso y de alto impacto, para que te acerque a tu meta, ya sea un ascenso o un aumento.
 
+Vale la pena decir que debes tener cuidado de no sobrecompensar, pasando a rechazar cualquier petición de ayuda. Sigue participando en trabajo de soldadura, pero anota todo ese esfuerzo (con un impacto correspondiente cuantificable), de modo que no se te olvide en tu siguiente evaluación de rendimiento.
+
 ## Evaluaciones asintóticas
 
 Las evaluaciones asintóticas son aquellas en las que los criterios de aprobación son inalcanzables, creando una dinámica de ["Aquiles y la tortuga"](https://es.wikipedia.org/wiki/Paradojas_de_Zen%C3%B3n) o de "[la zanahoria y el bastón](https://en.wikipedia.org/wiki/Carrot_and_stick)".
 
-Aplicado a tu carrera, esto significa que tus esfuerzos difícilmente serán recompensados de forma proporcional, puesto que la meta es inalcanzable. De esta lista, es el único patrón que creo que se usa rutinariamente y conscientemente. En mi carrera he visto diferentes encarnaciones de este patrón:
+Aplicado a tu carrera, esto significa que tus esfuerzos difícilmente serán recompensados de forma proporcional, puesto que la meta es inalcanzable. De esta lista, es el único patrón que creo que se usa conscientemente de manera rutinaria. En mi carrera he visto diferentes encarnaciones de este patrón:
 
 #### Evaluaciones de rendimiento relativas
 Consisten en identificar los mejores empleados (según algún criterio) para luego comparar al resto contra ellos.
@@ -147,13 +162,13 @@ Sin embargo, hay personas que están convencidas de que este tipo de prácticas 
 
 # Observaciones finales
 
-Si todavía no has entrado a una ciénaga, o no te has encontrado con ninguno de estos patrones, espero que este artículo te ayude a evitarlos en el futuro.
+Si todavía no has entrado a un pantano, o no te has encontrado con ninguno de estos patrones, espero que este artículo te ayude a evitarlos en el futuro.
 
 Si en este momento te encuentras en una situación compleja, recuerda que siempre hay una salida. Hay circunstancias en las cuales nos sentimos acorralados, pero es en esos momentos en los que hay que hacer un alto, respirar, y analizar la situación estratégicamente. Las soluciones que propongo aquí no son exhaustivas ni infalibles, pero espero que te den un punto de partida para comenzar a trazar tu propio camino.
 
 Lo más importante es recordar que tu carrera es tuya. Si bien es valioso ser un buen miembro del equipo y contribuir al éxito de tu organización, esto no debe venir a costa de tu propio desarrollo profesional o bienestar personal. A veces la solución más saludable es reconocer que el ambiente actual no es propicio para tu crecimiento y buscar nuevas oportunidades.
 
-Estas son algunas de las situaciones que he vivido o que he visto en personas cercanas.  Si has encontrado otros patrones de management u organizacionales que resulten en ciénagas, me gustaría conocerlos también. Puedes encontrarme en [Twitter](https://x.com/_0x5d), [Bluesky](https://bsky.app/profile/0x5d.bsky.social) o por [email](mailto:blog@0x5d.io)!
+Estas son algunas de las situaciones que he vivido o que he visto en personas cercanas.  Si has encontrado otros patrones de management u organizacionales que resulten en pantanos, me gustaría conocerlos también. Puedes encontrarme en [Twitter](https://x.com/_0x5d), [Bluesky](https://bsky.app/profile/0x5d.bsky.social) o por [email](mailto:blog@0x5d.io)!
 
 
 [^1]: Una posible razón por la que escaseen más perspectivas realistas como la de Cindy Sridharan es que, en mi opinión, la mayoría de ICs o líderes no tienen ningún incentivo para admitir errores en público. Desde el punto de vista de un IC, hablar sobre su empleador actual, así sea omitiendo información específica, puede traerle consecuencias negativas. Para un manager, por otro lado, admitir que actuó de manera egoísta o propició ambientes que no se alineaban con los intereses de su empresa o de su(s) equipo(s) puede costarle su carrera.
