@@ -1,9 +1,12 @@
 baseURL: "https://blog.0x5d.io/"
 languageCode: "en-us"
 title: "0x5d"
-theme: "PaperMod"
+theme: ["PaperMod"]
 outputs:
   home: ["HTML", "RSS", "JSON"]
+params:
+  social: true
+  disableSpecial1stPost: true
 languages:
   en:
     languageName: "English"
@@ -22,7 +25,6 @@ languages:
         - name: tags
           url: tags/
           weight: 10
-          
   es:
     languageName: Español
     languageAltTitle: Español
