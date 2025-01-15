@@ -8,7 +8,7 @@ ShowReadingTime: true
 ShowToc: true
 ---
 
-I've been learning Rust in my free time for the last 6 months. I read The Book and I'm in the middle of reading Rust for Rustaceans ([my notes so far](https://blog.nerv.industries/posts/rust-for-rustaceans/)), but after doing a couple of very small exercises and projects I wanted to do something more _rusty_.
+I've been learning Rust in my free time for the last 6 months. I read The Book and I'm in the middle of reading Rust for Rustaceans ([my notes so far](https://blog.0x5d.io/posts/rust-for-rustaceans/)), but after doing a couple of very small exercises and projects I wanted to do something more _rusty_.
 
 So on Sundays, in between espressos and with very good company, I started writing an external sort.
 

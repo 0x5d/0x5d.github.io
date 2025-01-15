@@ -1,6 +1,6 @@
-baseURL: "http://0x5d.github.io/"
+baseURL: "https://blog.0x5d.io/"
 languageCode: "en-us"
-title: "nerv"
+title: "0x5d"
 theme: "PaperMod"
 outputs:
   home: ["HTML", "RSS", "JSON"]
