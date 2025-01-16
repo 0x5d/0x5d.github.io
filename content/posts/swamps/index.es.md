@@ -156,9 +156,19 @@ Los criterios de evaluación abstractos hacen que sea más fácil crear razones 
 
 Si solo tu manager está aplicando evaluaciones relativas o _stack ranking_, trata de hacerle ver que no es una estrategia sostenible si quiere mantener un equipo de ingeniería estable. 
 
-_A veces_ las evaluaciones relativas en equipos de software surgen como resultado de un sesgos inconscientes, no necesariamente como parte de un plan premeditado para aumentar la competencia entre ingenieros. En este caso, un líder responsable y con la suficiente autoridad se dará cuenta de su error y tratará de corregirlo. Dicho eso, hay que tener en cuenta que a veces las manos de tu manager estarán atadas, si es que se trata de políticas que vienen de arriba. En ese caso, tu mejor apuesta es trabajar con él para identificar proyectos cuyo impacto sea difícil de controvertir. 
+_A veces_ las evaluaciones relativas en equipos de software surgen como resultado de sesgos inconscientes, no necesariamente como parte de un plan premeditado para aumentar la competencia entre ingenieros. Por ejemplo, un manager puede tener personas predilectas en su equipo, y al evaluar al resto de personas, en lugar de responder "¿Qué tan bueno es el trabajo de esta persona?" (una pregunta que implica cálculos difíciles), responde "¿Qué tan bien me cae esta persona comparada con mi empleado favorito?".
 
-Sin embargo, hay personas que están convencidas de que este tipo de prácticas son efectivas. En ese caso debes preguntarte si estás dispuesto a trabajar en constante competencia con tus pares para avanzar en tu carrera en tu empresa actual. 
+Es por esto que es importantísimo llevar un registro de tus logros, correlacionados con un impacto medible y verificable. Por ejemplo, "Investigué e implementé técnicas para mejorar los tiempos de carga de la consola de métricas en un 30%" (añade un link a un reporte o [documento de diseño](https://blog.0x5d.io/es/posts/rfcs/)). En este caso, un líder responsable y con la suficiente autoridad se dará cuenta de su error y tratará de corregirlo.
+
+Dicho eso, hay que tener en cuenta que a veces las manos de tu manager estarán atadas, cuando se trate de políticas que vienen de arriba. En ese caso, tu mejor apuesta es trabajar con él para identificar proyectos cuyo impacto sea incontrovertible.
+
+Las evaluaciones 360 (las cuales incorporan la retroalimentación de tus pares, no solo la de tu jefe), pueden sonar como una posible solución, pero normalmente:
+- Tienen un efecto nulo sobre tus oportunidades, ya que en general tanto tú como tus colegas no tienen ningún incentivo para hablar mal el uno del otro, por lo que los feedbacks terminan siendo neutros o vagos.
+- Tienen un efecto negativo sobre la organización, ya que demandan de demasiado tiempo para agregar todo el feedback, calibrarlo, analizarlo, etc., y distraen de otras acciones que podrían tener resultados más tangibles.
+
+["Hell is Other People"](https://open.substack.com/pub/lcamtuf/p/hell-is-other-people-performance) de Michał Zalewski profundiza más sobre las promesas fallidas de las evaluaciones 360.
+
+Sin embargo, hay personas que están convencidas de que este tipo de prácticas son efectivas. En ese caso debes preguntarte si estás dispuesto a trabajar en constante competencia con tus pares para avanzar en tu carrera en tu empresa actual.
 
 # Observaciones finales
 
