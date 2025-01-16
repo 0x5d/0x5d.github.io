@@ -21,7 +21,7 @@ Las únicas fuentes que he visto que se enfocan en los intereses individuales de
 
 Son también las únicas fuentes entre las que he visto cuyas autoras no eran managers al momento de escribirlas.[^1]
 
-No hablo de situaciones "sencillas" de manejar, tales como malentendidos particulares, coyunturas temporales (como la renuncia de tu manager), o problemas obvios (como que un colega te haga bullying) sino de patrones sistemáticos que, a menos que se identifiquen rápido, te pueden poner en una posición desventajosa de la cual es muy difícil salir. Es esta dificultad para navegarlos y encontrar una salida la razón por la que me refiero a estos estados como "pantanos".
+No hablo de situaciones "sencillas" de manejar, tales como malentendidos particulares, coyunturas temporales (como la renuncia de tu manager); o problemas obvios (como que un colega te haga bullying) sino de patrones sistemáticos que, a menos que se identifiquen rápido, te pueden poner en una posición desventajosa de la cual es muy difícil salir. Es esta dificultad para navegarlos y encontrar una salida la razón por la que me refiero a estos estados como "pantanos".
 
 Estos son patrones que he identificado a lo largo de mi carrera que han hecho que yo, u otras personas de otros equipos, entren en un pantano. Algunos los he vivido, y otros los he observado desde una distancia segura.
 
@@ -34,13 +34,15 @@ También quiero aclarar que en general, estas situaciones no suceden como parte 
 
 ## Distribución desequilibrada de equipos
 
-En este patrón hay al menos 2 grupos de personas en un mismo equipo que comparten responsabilidades operativas con una diferencia horaria importante (al menos ~6 hrs). Si uno de los grupos tiene menos miembros, la carga operativa en ese grupo va a ser mayor por persona, afectando negativamente su productividad y sus oportunidades de progresar en la empresa.
+En este patrón hay al menos 2 grupos de personas en un mismo equipo que comparten responsabilidades operativas con una diferencia horaria importante (al menos ~6 horas). Si uno de los grupos tiene menos miembros, la carga operativa en ese grupo va a ser mayor por persona, afectando negativamente su productividad y sus oportunidades de progresar en la empresa.
 
 Digamos que hay un equipo con 8 personas en América, y 4 personas en Europa, encargados de desarrollar y soportar una aplicación web. A cada persona le corresponde una semana de on-call (_guardia_) primario, y una de secundario inmediatamente luego. Los turnos de on-call duran 12 horas, y el turno de on-call de las personas en Europa inicia cuando termina el de las de América. A simple vista, éste parece ser un acuerdo justo, no?
 
 Con estas condiciones, las personas en América tendrían una semana de on-call primario, una de on-call secundario, y luego 6 semanas para trabajar en funcionalidades y mejoras (ojalá) sin distracciones.
 
 Por otro lado, el equipo en Europa pasaría 2 semanas on-call y 2 semanas trabajando en mejoras. Esto significa que el 50% de su tiempo lo pasan dando soporte, comparado con 25% para las personas en América!
+
+![Gráfica de capacidad de trabajo](https://raw.githubusercontent.com/0x5d/0x5d.github.io/refs/heads/main/content/posts/swamps/assets/frequency_es.png)
 
 Para un manager, esto se ve como una mejora del 25% en productividad en el equipo de América. Por lo tanto, es probable que las personas en ese equipo avancen hacia ascensos y puestos de liderazgo mucho más rápido. A su vez, dado que son más productivos, los managers empezarán a entregarle más responsabilidades a estos líderes, quienes seguro querrán que sus equipos crezcan, posiblemente exacerbando el problema si contratan más personas en su zona horaria.
 
@@ -49,7 +51,7 @@ Por su lado, las personas en Europa entrarán en un pantano. Dada su menor produ
 La situación puede empeorar con otros factores, tales como
 - Concentración de trabajo reactivo en una zona horaria: En el ejemplo de arriba, se asume que ambos equipos tienen la misma carga mientras están on-call. Sin embargo, podría pasar que la mayoría de usuarios estén en Europa, de modo que que los turnos de soporte de América (que suceden durante tarde/ noche en Europa) sean tranquilos y permitan que aún durante sus turnos de on-call, el equipo pueda seguir trabajando en funcionalidades e iniciativas nuevas.
 - Burnout: Dependiendo de la frecuencia de la rotación, en casos extremos como el del equipo de Europa, puede que el tiempo transcurrido entre semanas de on-call no sea suficiente para que el equipo se recupere del cansancio físico y mental que puede suponer estar en guardia por 12 horas o más durante 2 semanas, haciendo que la moral y la productividad bajen cada vez más rápido.
-- Ubicación: Si la empresa tiene oficinas, y el equipo más pequeño es remoto, sus oportunidades de alcanzar y seguir el ritmo del otro equipo serían aún menores, puesto que la comunicación asíncrona tiende a tener un ancho de banda mucho menor.
+- Ubicación: Si además la empresa tiene oficinas, y el equipo más pequeño es remoto, sus oportunidades de alcanzar y seguir el ritmo del otro equipo serían aún menores, puesto que la comunicación asíncrona tiende a ser menos eficiente. El equipo que puede comunicarse cara a cara en la misma zona horaria va a poder discutir ideas, llegar a consensos, etc., mucho más rápido.
 
 ### Señales de alerta
 - Crecimiento desproporcionado en un continente diferente al tuyo; o, si vas a entrar a la empresa, presencia desproporcionada (en términos de número de empleados), en otro continente.
@@ -86,7 +88,7 @@ Este patrón se perpetúa si la empresa recompensa más el comienzo de nuevos pr
 - Las evaluaciones de rendimiento revelan un SOS ([_Shiny Object Syndrome_](https://en.wikipedia.org/wiki/Shiny_object_syndrome), por sus siglas en inglés), recompensando mucho más features y proyectos nuevos sobre esfuerzos de estabilización de sistemas existentes.
 
 ### Solución
-Como en todos los casos, el primer paso debe ser hablarlo con tu manager. Muéstrale las ocasiones en las cuales tu rango de oportunidades se vio limitado por tener que trabajar completando trabajo ajeno. Puede que tu manager no tenga mucha experiencia y haya generado un "equipo de limpieza" no por mala fé, sino por no haber identificado las consecuencias de segundo orden que se desprenden de sus decisiones. Si es una persona razonable y tu evidencia es concreta, seguro reaccionará.
+Como en todos los casos, el primer paso debe ser hablarlo con tu manager. Muéstrale las ocasiones en las cuales tu rango de oportunidades se vio limitado por tener que trabajar completando trabajo ajeno. Puede que tu manager no tenga mucha experiencia y haya generado un "equipo de limpieza" no por mala fe, sino por no haber identificado las consecuencias de segundo orden que se desprenden de sus decisiones. Si es una persona razonable y tu evidencia es concreta, seguro reaccionará.
 
 Si no lo hace, la desobediencia puede funcionar. Por ejemplo, si hay un proyecto en el que quieres trabajar, pero no puedes porque tu _backlog_ está lleno, o tu manager se rehúsa a que cambies tus prioridades, puedes elegir trabajar en él independientemente. Es una estrategia arriesgada, ya que igual debes entregar el resto del trabajo, por lo que probablemente tendrás que trabajar en el proyecto en tu tiempo libre. Además, no tienes ningún tipo de garantía de que recibirás algún tipo de recompensa a su término. Habiendo dicho eso, he visto que esta estrategia ha funcionado bastante bien. Si no descuidas tu trabajo actual y tu proyecto es de alto impacto, tu empresa y tu manager no podrán simplemente ignorarlo.
 
