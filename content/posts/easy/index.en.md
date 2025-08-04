@@ -3,7 +3,7 @@ title: "Easy"
 date: 2025-01-27T15:11:47-05:00
 lastmod: 2025-01-27T15:11:47-05:00
 publishDate: 2025-01-27T15:11:47-05:00
-etiquetas: ["language", "books"]
+tags: ["language", "books"]
 ---
 
 Rich Hickey's ["Simple Made Easy"](https://www.youtube.com/watch?v=SxdOUGdseq4) is one of the best talks I've ever seen. I watched it again recently, after 8 years, but now the part that stood out was the section where he goes into the etymology of "_Easy_" ([timestamp](https://youtu.be/SxdOUGdseq4?si=7XtysuSXbf0OwLc6&t=174)). It happens very early in the talk, and I just couldn't think about anything else.
