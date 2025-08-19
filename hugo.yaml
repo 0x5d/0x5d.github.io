@@ -7,6 +7,15 @@ outputs:
 params:
   social: true
   disableSpecial1stPost: true
+# https://gohugo.io/configuration/markup/#highlight
+markup:
+  highlight:
+    codeFences: true
+    noClasses: false
+    hl_inline: false
+    lineNos: false
+    # See https://gohugo.io/quick-reference/syntax-highlighting-styles/
+    style: github-dark
 languages:
   en:
     languageName: "English"
